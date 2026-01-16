@@ -1,0 +1,90 @@
+<html>
+<head>
+
+    <title> Registration </title>
+    <link rel="stylesheet" href="registration.css">
+
+
+</head>
+
+<body>
+    
+    <div style="display:grid; place-items:center; height:100%">
+ 
+        <div class="divContainer">
+
+            <h2 style="text-align:center;"> Student Registration </h2> 
+        
+            <form style="padding:10px;">
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="name"> Full Name </label> </div>
+                        <div class="div-inputs"> <input name="name" type="text" id="name" placeholder="Enter Full Name"/> </div>
+                </div>
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="enroll"> Enrollment Number </label> </div>
+                        <div class="div-inputs"> <input name="enroll" type="number" id="enroll" placeholder="Enter Enrollment Number"/> </div>
+                </div>
+
+                <div class="divFields">
+
+                        <div class="div-labels"> <label for="dept"> Department </label> </div>
+
+                        <div class="div-inputs"> 
+                                <select name="dept" id="dept"> 
+                                        <option value=""> --Select Department-- </option>
+                                        <option value="amtics"> AMTICS </option>
+                                        <option value="cgpit"> CGPIT </option>
+                                        <option value="srcp"> SRCP </option>
+                                </select> 
+                        </div>
+                </div>
+
+                <div class="divFields">
+
+                        <div class="div-labels"> <label for="year"> Year </label> </div>
+
+                        <div class="div-inputs">
+                                <select name="year">
+                                        <option value="">--Select Year--</option>
+                                        <option value="1"> 1st </option>
+                                        <option value="2"> 2nd </option>
+                                        <option value="3"> 3rd </option>
+                                        <option value="4"> 4th </option>
+                                </select>
+                         </div>
+                </div>
+
+
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="email"> Email </label> </div>
+                        <div class="div-inputs"> <input name="email" type="email" id="email" placeholder="Enter Email"/> </div>
+                </div>
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="pass"> Password </label> </div>
+                        <div class="div-inputs"> <input name="pass" type="password" id="pass" placeholder="Create Password"/> </div>
+                </div>
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="confirmPass"> Confirm Password </label> </div>
+                        <div class="div-inputs"> <input name="confirmPass" type="password" id="confirmPass" placeholder="Confirm Password"/> </div>
+                </div>
+
+                <div class="divFields">
+                        <button  class="register-btn" type="submit" onclick="return validateForm()"> Register </button>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="registration.js"> </script>
+
+</body>
+</html>

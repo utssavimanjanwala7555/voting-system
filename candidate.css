@@ -1,0 +1,43 @@
+body
+{
+    font-family: arial;
+}
+
+.main-container
+{
+    display:flex; 
+    justify-content:center; 
+    gap:30px;
+    border:1px solid black; 
+    padding:10px;
+    margin-bottom: 8px;
+}
+
+.profile-container
+{
+    border:2px solid gray; 
+    padding:10px; 
+    width:100%;
+}
+
+.personal-info
+{
+    display:flex; 
+    flex-direction:row; 
+    gap:5px; 
+    margin-bottom:10px;
+}
+
+.work-info
+{
+    display:flex; 
+    flex-direction:column; 
+    gap:10px;
+    
+}
+
+img
+{
+    height: 150px;
+    width: 150px;
+}
