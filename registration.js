@@ -30,15 +30,16 @@ function validateForm()
     }
 
 
-
-
-
-
     if(enroll == "")
     {
         alert("Please enter your enrollment number.");
         return false;
     }
+    if(enroll.length != 15)
+    {
+        alert("Please enter a valid enrollment number.");
+    }
+
 
     if(dept == "")
     {
