@@ -23,6 +23,12 @@ function validateForm()
         alert("Only alphabets and spaces are allowed in name.");
         return false;
     }
+    if(name.length < 3 || name.length > 50)
+    {
+        alert("please enter appropriate name.");
+        return false;
+    }
+
 
 
 
