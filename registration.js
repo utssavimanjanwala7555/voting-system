@@ -3,6 +3,9 @@ function validateForm()
     const name = document.getElementById("name").value;
     const dept = document.getElementById("dept").value;
     const enroll = document.getElementById("enroll").value;
+    const year = document.getElementById("year").value;
+    const email = document.getElementById("email").value;
+
     
     if(name == "")
     {
@@ -24,6 +27,18 @@ function validateForm()
     if(dept == "")
     {
         alert("Please select your department.");
+        return false;
+    }
+
+    if(year == "")
+    {
+        alert("Please enter your academic year.");
+        return false;
+    }
+
+     if(email == "")
+    {
+        alert("Please enter your email.");
         return false;
     }
 }
