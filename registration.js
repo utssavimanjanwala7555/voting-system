@@ -5,6 +5,7 @@ function validateForm()
     const enroll = document.getElementById("enroll").value;
     const year = document.getElementById("year").value;
     const email = document.getElementById("email").value;
+    const pass = document.getElementById("pass").value;
 
     
     if(name == "")
@@ -12,11 +13,20 @@ function validateForm()
         alert("Please enter your name.");
         return false;
     }
-    if(!isNaN(name))
+    if(/\d/.test(name))
     {
         alert("Name cannot contain numbers.");
         return false;
     }
+    if(!/^[A-Za-z]+(\s[A-Za-z]+)*$/.test(name))
+    {
+        alert("Only alphabets and spaces are allowed in name.");
+        return false;
+    }
+
+
+
+
 
     if(enroll == "")
     {
@@ -36,9 +46,17 @@ function validateForm()
         return false;
     }
 
-     if(email == "")
+    if(email == "")
     {
         alert("Please enter your email.");
         return false;
     }
+
+    if(pass == "")
+    {
+        alert("Please create a password.");
+        return false;
+    }
+    
+
 }
