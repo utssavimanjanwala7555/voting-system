@@ -59,6 +59,12 @@ function validateForm()
         return false;
     }
 
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+    {
+        alert("Enter valid Email Id.");
+        return false;
+    }
+
     if(pass == "")
     {
         alert("Please create a password.");
