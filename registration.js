@@ -6,6 +6,7 @@ function validateForm()
     const year = document.getElementById("year").value;
     const email = document.getElementById("email").value;
     const pass = document.getElementById("pass").value;
+    const Cpass = document.getElementById("confirmPass").value;
 
     
     if(name == "")
@@ -38,6 +39,7 @@ function validateForm()
     if(enroll.length != 15)
     {
         alert("Please enter a valid enrollment number.");
+        return false;   
     }
 
 
@@ -68,6 +70,18 @@ function validateForm()
     if(pass == "")
     {
         alert("Please create a password.");
+        return false;
+    }
+
+    if(Cpass == "")
+    {
+        alert("Please rewrite your password to confirm.");
+        return false;
+    }
+
+    if(pass != Cpass)
+    {
+        alert("Passwords do not match.");
         return false;
     }
     
