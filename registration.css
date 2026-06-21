@@ -1,22 +1,44 @@
-html, body
+*
 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: arial;
-    height: 100%;
-    background-color: #213448;
-    color: #213448;
-    margin:0;
 }
 
+body
+{
+    background-color: #E8DCCB; 
+    color: #213448;
+}
 
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px;
+}
+
+nav a 
+{
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: lightgray;
+}
 
 .divContainer
 {
     border-radius:8px;
     padding:10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     background-color: white;
-    border-bottom: 2px solid #94B4C1;
+    border-bottom: 2px solid #213448;
+    border-left: 2px solid #213448;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+    
 }
 
 .divFields
@@ -27,6 +49,7 @@ html, body
     padding: 5px;
     display:flex;
     flex-direction: column;
+    outline: none;
 }
 
 .div-labels
@@ -44,7 +67,7 @@ html, body
 
 .div-inputs input,select
 {
-    height:inherit;
+    height: 30px;;
     width: 100%;
     border:none;
     outline: none;
@@ -55,9 +78,15 @@ html, body
     height:30px;
     border-radius: 5px;
     background-color: #213448;
-    color: aliceblue;
+    color: lightgray;
     margin-top:15px;
-    font-size: 18px; 
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.divFields button
+{
+    height:38px;
 }
 
 .register-btn:hover
