@@ -86,4 +86,22 @@ function validateForm()
     }
     
 
+    const user = 
+    {
+        name : name,
+        dept : dept,
+        enroll : enroll,
+        year : year,
+        email : email,
+        pass : pass,
+        Cpass : Cpass
+    }
+
+    const userArray = [];
+    userArray.push(user);
+
+    localStorage.setItem("user", JSON.stringify(userArray));
+
+    alert("Registration successful!");
+    return true;
 }
