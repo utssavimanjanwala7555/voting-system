@@ -93,15 +93,25 @@ function validateForm()
         enroll : enroll,
         year : year,
         email : email,
-        pass : pass,
-        Cpass : Cpass
+        pass : pass
     }
 
-    const userArray = [];
-    userArray.push(user);
+    const existingUser = JSON.parse(localStorage.getItem("user")) || [];
 
-    localStorage.setItem("user", JSON.stringify(userArray));
+    const enrollExists = existingUser.some(e => e.enroll === user.enroll);
+        if(enrollexists)
+        {
+            alert("Enrollment no has already been registerd")
+        }
+
+    const userArray = [...existingUser, user];
+
+    localStorage.setItem("user", JSON.stringify(userArray)); 
 
     alert("Registration successful!");
-    return true;
+
+    document.getElementById("registerForm").reset();
+
+    window.location.href = "login.html"; //once registration is done and data is stored in localStorage then the page goes to login where in student can login using enroll and password created in registration form
+
 }
