@@ -99,9 +99,10 @@ function validateForm()
     const existingUser = JSON.parse(localStorage.getItem("user")) || [];
 
     const enrollExists = existingUser.some(e => e.enroll === user.enroll);
-        if(enrollexists)
+        if(enrollExists)
         {
-            alert("Enrollment no has already been registerd")
+            alert("Enrollment no has already been registerd");
+            return false;
         }
 
     const userArray = [...existingUser, user];
