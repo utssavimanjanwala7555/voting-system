@@ -2,7 +2,7 @@
 <head>
     <title> Candidate Registration </title>
 </head>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="registration.css">
 
 <body>    
 
@@ -18,4 +18,62 @@
 
    </header>
 
-   
+    <div style="display:grid; place-items:center; margin:40px 0px;">
+ 
+        <div class="divContainer">
+
+            <h2 style="text-align:center;"> Candidate Registration </h2> 
+        
+            <form id="registerForm" style="padding:10px;">
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="name"> Full Name </label> </div>
+                        <div class="div-inputs"> <input name="name" type="text" id="name" placeholder="Enter Full Name"/> </div>
+                </div>
+
+                <div class="divFields">
+                        <div class="div-labels"> <label for="enroll"> Enrollment Number </label> </div>
+                        <div class="div-inputs"> <input name="enroll" type="number" id="enroll" placeholder="Enter Enrollment Number"/> </div>
+                </div>
+
+                <div class="divFields">
+
+                        <div class="div-labels"> <label for="dept"> Department </label> </div>
+
+                        <div class="div-inputs"> 
+                                <select name="dept" id="dept"> 
+                                        <option value=""> --Select Department-- </option>
+                                        <option value="amtics"> AMTICS </option>
+                                        <option value="cgpit"> CGPIT </option>
+                                        <option value="srcp"> SRCP </option>
+                                </select> 
+                        </div>
+                </div>
+
+                <div class="divFields">
+
+                        <div class="div-labels"> <label for="year"> Year </label> </div>
+
+                        <div class="div-inputs">
+                                <select name="year" id="year">
+                                        <option value="">--Select Year--</option>
+                                        <option value="1"> 1st </option>
+                                        <option value="2"> 2nd </option>
+                                        <option value="3"> 3rd </option>
+                                        <option value="4"> 4th </option>
+                                </select>
+                         </div>
+                </div>
+
+                <div class="divFields">
+                        <button  class="register-btn" type="submit" onclick="return validateForm()"> Register </button>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="registration.js"> </script>
