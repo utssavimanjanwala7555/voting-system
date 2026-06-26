@@ -5,14 +5,20 @@
 
         e.preventDefault();
 
-        const input =document.createElement("input");
+        const div = document.createElement("div");
+        div.className = "div-inputs";
+        achieveContainer.appendChild(div);
+
+        const input = document.createElement("input");
         input.type = "text";
         input.placeholder = "Enter Achievement";
-        //input.class = "achievements";
-        achieveContainer.appendChild(input);
+        input.className = "achievements"; 
+        div.appendChild(input);
+    
+       
     });
  
     const name = document.getElementById("name").value;
     const dept = document.getElementById("dept").value;
     const enroll = document.getElementById("enroll").value;
-    const year = document.getElementById("year").value;s
+    const year = document.getElementById("year").value;
