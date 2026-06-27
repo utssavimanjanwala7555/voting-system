@@ -22,3 +22,10 @@
     const dept = document.getElementById("dept").value;
     const enroll = document.getElementById("enroll").value;
     const year = document.getElementById("year").value;
+
+    const registerBtn = document.querySelector(".register-btn");
+
+    registerBtn.addEventListener("click", function(e){
+
+        
+    });
