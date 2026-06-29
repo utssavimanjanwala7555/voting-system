@@ -107,7 +107,7 @@
     {
         alert("Please Enter Your Achievements.");
         return false;
-    }
+    } 
 
     //keyworks
     if(keywork == "")
