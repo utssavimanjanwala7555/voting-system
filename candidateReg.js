@@ -116,6 +116,24 @@
         return false;
     }
 
-        
+    candidate =
+    {
+        name : name,
+        dept : dept,
+        enroll : enroll,
+        year : year,
+        achieve : achieve, 
+        keywork : keywork,
+
+    }
+
+        const existingCand = JSON.parse(localStorage.getItem("candidate")) || [];
+
+        const candidateArray = [...existingCand, candidate];
+
+        localStorage.setItem("candidate", JSON.stringify(candidateArray));
+
+        alert("registartion successful");
+
         window.location.reload();
     });
