@@ -38,7 +38,6 @@
 
 
     //validation
-    const registerBtn = document.querySelector(".register-btn");
     const candidateForm = document.querySelector("#candidateForm");
 
     candidateForm.addEventListener("submit", function(e){
@@ -47,11 +46,19 @@
     const dept = document.getElementById("dept").value;
     const enroll = document.getElementById("enroll").value;
     const year = document.getElementById("year").value;
-    const achieve = document.getElementById("achieve").value;
-    const keywork = document.getElementById("keywork").value;
+    const achieve = document.querySelectorAll(".achievements");
+    const keywork = document.querySelectorAll("keyworks");
+
 
         e.preventDefault();
 
+        const achievements = [];
+        
+        achieve.forEach(function(achievement){
+            achievements.push(achievement.value);
+        })
+
+    
     //name
     if(name == "")
     {
@@ -122,7 +129,7 @@
         dept : dept,
         enroll : enroll,
         year : year,
-        achieve : achieve, 
+        achievements : achievements, 
         keywork : keywork,
 
     }
