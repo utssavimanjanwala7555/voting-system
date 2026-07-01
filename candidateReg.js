@@ -47,7 +47,7 @@
     const enroll = document.getElementById("enroll").value;
     const year = document.getElementById("year").value;
     const achieve = document.querySelectorAll(".achievements");
-    const keywork = document.querySelectorAll("keyworks");
+    const keywork = document.querySelectorAll(".keyworks");
 
 
         e.preventDefault();
