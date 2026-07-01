@@ -58,7 +58,15 @@
             achievements.push(achievement.value);
         })
 
-    
+        
+        const keyworks = [];
+
+        keywork.forEach(function(kw){
+            keyworks.push(kw.value);
+        })
+
+
+
     //name
     if(name == "")
     {
@@ -130,7 +138,7 @@
         enroll : enroll,
         year : year,
         achievements : achievements, 
-        keywork : keywork,
+        keyworks : keyworks,
 
     }
 
