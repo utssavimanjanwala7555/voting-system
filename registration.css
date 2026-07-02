@@ -112,3 +112,9 @@ nav a
 {
     margin: 5px 0px;
 }
+
+input[type="file"]
+{
+    transform: translateX(50px);
+    
+}
