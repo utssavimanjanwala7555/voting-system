@@ -121,6 +121,11 @@ nav a
 .photo-upload
 {
    display: flex;
-   
+   align-items: center;
+   color: gray;
 }
 
+.photo-upload:hover
+{
+    color: #213448;
+}
