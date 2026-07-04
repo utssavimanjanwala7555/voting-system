@@ -36,6 +36,21 @@
         div.appendChild(input);
     });
 
+    //photo previw
+    const photoInput = document.getElementById("photo");
+    const photoPreview = document.getElementById("photo-preview");
+
+    photoInput.addEventListener("change", function(){
+        
+    });
+
+
+d
+
+
+
+
+
 
     //validation
     const candidateForm = document.querySelector("#candidateForm");
