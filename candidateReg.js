@@ -41,7 +41,7 @@
     const photoPreview = document.getElementById("photo-preview");
 
     photoInput.addEventListener("change", function(){
-        
+         
     });
 
 
