@@ -36,20 +36,27 @@
         div.appendChild(input);
     });
 
-    //photo previw
+    //photo preview
     const photoInput = document.getElementById("photo");
     const photoPreview = document.getElementById("photo-preview");
+    let imgURL = "";
 
     photoInput.addEventListener("change", function(){
          
+        const photoFile = photoInput.files[0];
+
+        const reader = new FileReader();
+        
+            reader.onload = function()
+            {
+                photoPreview.src = reader.result; 
+                photoPreview.style.display = "block";
+                
+                imgURL = reader.result;
+            }   
+            
+        reader.readAsDataURL(photoFile);
     });
-
-
-
-
-
-
-
 
 
     //validation
@@ -146,6 +153,14 @@
         return false;
     }
 
+    //photo
+    if(imgURL == "")
+    {
+        alert("Please Upload Your Photo.");
+        return false;
+    }
+    
+
     candidate =
     {
         name : name,
@@ -154,6 +169,7 @@
         year : year,
         achievements : achievements, 
         keyworks : keyworks,
+        imgUrl : imgURL,
 
     }
 
