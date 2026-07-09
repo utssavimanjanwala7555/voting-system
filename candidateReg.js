@@ -139,27 +139,37 @@
         return false;
     }
 
-    //achievements
-    if(achieve == "")
+    
+    //acievements 
+    const isAchieveEmpty = achievements.some(function(achievement){
+        return achievement.trim() == ""; 
+    });
+
+    if(isAchieveEmpty)
     {
         alert("Please Enter Your Achievements.");
         return false;
-    } 
+    }
 
     //keyworks
-    if(keywork == "")
+    const isKeyworkEmpty = keyworks.some(function(kw){
+        return kw.trim() == "";
+    })
+
+    if(isKeyworkEmpty)
     {
         alert("Please Enter Your Key Works.");
         return false;
     }
 
-    //photo
+
+        //photo
     if(imgURL == "")
     {
         alert("Please Upload Your Photo.");
         return false;
     }
-    
+
 
     candidate =
     {
