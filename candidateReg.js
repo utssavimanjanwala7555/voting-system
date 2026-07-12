@@ -189,7 +189,7 @@
 
         localStorage.setItem("candidate", JSON.stringify(candidateArray));
 
-        alert("registartion successful");
+        alert("registartion successful"); 
 
         window.location.reload();
     });
