@@ -5,12 +5,38 @@ const candidates = JSON.parse(localStorage.getItem("candidate")) || [];
 candidates.forEach(function(candidate)
 {
     const card = document.createElement("div");
-    card.className = "candidate-card";
-    candidate.name ;        // make another createElement for name then for dept etc... and (name = candidate.name)
-    candidate.dept t;
-    candidate.achievements ;
-    candidate.keyworks ;
-    candidate.imgUrl ;
 
-    candCont.appendChild("card");
+    //photo
+    const photo = document.createElement("img");
+    photo.className = "photo";
+    photo.src = candidate.imgUrl;
+    card.appendChild(photo);
+
+    //name
+    const name = document.createElement("div");
+    name.className = "name-div";
+    name.textContent = candidate.name;
+    card.appendChild(name);
+
+    //dept
+    const dept = document.createElement("div");
+    dept.className = "class-div";
+    dept.textContent = candidate.dept;
+    card.appendChild(dept);
+
+    //achievements
+    const achievementList = document.createElement("ul");
+    
+    candidate.achievements.forEach(function(achievement)
+    {
+        const li = document.createElement("li");
+        li.textContent = achievement;
+        achievementList.appendChild(li);
+    })
+
+    card.appendChild(achievementList);
+
+
+    //display full card 
+    candCont.appendChild(card);
 });

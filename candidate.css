@@ -26,3 +26,14 @@ section
 {
     padding: 40px 20px;
 }
+
+.name-div
+{
+    color: red;
+}
+
+ul
+{
+    list-style-type: disc;
+    margin-left: 20px;
+}
