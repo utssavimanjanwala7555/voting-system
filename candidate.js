@@ -5,6 +5,7 @@ const candidates = JSON.parse(localStorage.getItem("candidate")) || [];
 candidates.forEach(function(candidate)
 {
     const card = document.createElement("div");
+    card.className = "profile-cards"
 
     //photo
     const photo = document.createElement("img");

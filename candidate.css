@@ -37,3 +37,32 @@ ul
     list-style-type: disc;
     margin-left: 20px;
 }
+
+#candidate-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.photo
+{
+    display: block;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.profile-cards
+{
+    background-color: aquamarine;
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.name-div
+{
+    font-size: 30px;
+}
