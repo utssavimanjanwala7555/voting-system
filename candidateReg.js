@@ -2,7 +2,7 @@
  const achieveContainer = document.querySelector("#achievementContainer");
 
  const keyworkBtn = document.querySelector("#keyworkBtn");
- const keyworkContainer = document.querySelector("#keywordContainer");
+ const keyworkContainer = document.querySelector("#keyworkContainer");
 
     
     addAchieveBtn.addEventListener("click" , function(e){
@@ -10,7 +10,7 @@
         e.preventDefault();
 
         const div = document.createElement("div");
-        div.className = "div-inputs";
+        div.className = "div-with-delete"; //previos name of the class is "div-inputs"
         achieveContainer.appendChild(div);
 
         const input = document.createElement("input");
@@ -18,9 +18,30 @@
         input.placeholder = "Enter Achievement";
         input.className = "achievements"; 
         div.appendChild(input);
+
+        //delete achieve btn (TRYING) removing this block will make everything go back to normal
+        const rmvBtn = document.createElement("button");
+        rmvBtn.className = "remove-btn";
+        rmvBtn.innerText = "*";
+        div.appendChild(rmvBtn);
      
     });
- 
+    
+    //event delegation is best option for this (LEARN EVENT DELEGATION)
+    // const closeBtn = document.querySelectorAll(".remove-btn");
+
+    // closeBtn.forEach(function(button)
+    // {
+    //     button.addEventListener("click" , function(e)
+    //     {
+    //         e.preventDefault();
+    //         button.parentElement.remove();
+    //     });
+    // });
+
+    
+
+
     keyworkBtn.addEventListener("click" , function(e){
 
         e.preventDefault();

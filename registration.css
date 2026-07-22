@@ -108,9 +108,16 @@ nav a
     margin: 5px 0px;
 }
 
-#keywordContainer .div-inputs
+#keyworkContainer .div-inputs
 {
     margin: 5px 0px;
+}
+
+.remove-btn
+{
+    height: 25px;
+    width: 25px;
+    border: black 1px solid;
 }
 
 #photo
@@ -136,3 +143,44 @@ nav a
     height: 100%;
     object-fit: cover;
 }
+
+/* this is all new  */
+.div-with-delete
+{
+    justify-content: space-between;
+    display: flex;
+    width:auto;
+    border: 3px solid #213448; 
+    border-radius: 5px;
+    padding:2px;
+    margin: 5px 0px;
+}
+
+.div-with-delete input
+{
+    outline: none;
+    border: none;
+    height: 30px;
+    flex:1
+}
+
+.remove-btn
+{
+    background: none;
+    display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.div-with-delete:hover .remove-btn
+{
+    display: block;
+    height:inherit;
+    border: gray solid 1px;
+    background-color: lightgray;
+    color: black ;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
