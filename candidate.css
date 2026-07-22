@@ -44,6 +44,7 @@ ul
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 20px;
+    padding: 8px;
 }
 
 .photo
@@ -52,13 +53,15 @@ ul
     height: 200px;
     width: 200px;
     object-fit: cover;
+    
 }
 
 .profile-cards
 {
-    background-color: aquamarine;
+    background-color: cadetblue;
     width: 100%;
     margin: 10px;
+    padding: 8px;
     
 }
 

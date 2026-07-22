@@ -26,6 +26,10 @@ candidates.forEach(function(candidate)
     card.appendChild(dept);
 
     //achievements
+    const achiveTitle = document.createElement("h3");
+    achiveTitle.innerText = "Achievements";
+    card.append(achiveTitle);
+
     const achievementList = document.createElement("ul");
     
     candidate.achievements.forEach(function(achievement)
